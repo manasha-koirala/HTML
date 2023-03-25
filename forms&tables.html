@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms and tables</title>
+</head>
+<body>
+    <table border="1" bgcolor="pink">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Roll no.</th>
+                <th colspan="2">Subjects</th>
+            </tr>
+        <tbody>
+            <tr>
+                <td>Manasha Koirala</td>
+                <td>Bsc.Computing</td>
+                <td>9765</td>
+                <td>English</td>
+                <td>Data Science</td>
+            </tr>
+        </tbody>
+        </thead>
+    </table><br><br>
+    <table border="1" bgcolor="yellow">
+        
+        <tr>
+            <th rowspan="2">Name</th>
+            <th rowspan="2">Class</th>
+            <th rowspan="2">Roll no.</th>
+            <th colspan="2">Subjects marks</th>
+        </tr>   
+        <tr>
+            <th>Science</th>
+            <th>Maths</th>
+        </tr>
+        <tr>
+            <td>Manasha Koirala</td>
+            <td>Bsc.Computing</td>
+            <td>9765</td>
+            <td>76</td>
+            <td>96</td>
+        </tr>
+    </table><br><br>
+    <table border="1" bgcolor="beige">
+        <tr>
+            <td rowspan="2">Row 1 and 2, Column 1</td>
+            <td>Row 1, Column 2</td>
+        </tr>
+        <tr>
+            <td>Row 2, Column 2</td>
+        </tr>
+    </table><br><br>
+<!-- FORMS NOW -->
+<table border="1">
+        <tr>
+            <td>
+                <form action="url">
+                    <label for="name">Name</label>    
+                </form>
+            </td>
+            <td>
+                <form action="url">
+                    <input type="text" id="name" name="username" placeholder="Manasha Koirala">
+                </form>
+            </td>
+        <tr>
+            <td>
+                <form action="url">
+                    <label for="password">Password</label>   
+                </form>
+            </td>
+            <td>
+                <form action="url">
+                    <input type="password" id="password" name="userpassword">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="url">
+                    <label for="email">Email</label> 
+                </form>
+            </td>
+            <td>
+                <form action="url">
+                    <input type="emial" id="emial" name="usermail">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="url">
+                    <label for="team">Your Favoraite Team..</label> 
+                </form>
+            </td>
+            <td>
+                <form action="url">
+                    <select name="team" id="team">
+                        <option value="rb">Red Bull</option>
+                        <option value="sf">Fararrie</option>
+                        <option value="ml">MacLaren</option>
+                        <option value="at">Alpha Tauri</option>
+                        <option value="wi">Williams</option>
+                        <option value="hm">Hass</option>
+                    </select><br>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="url">
+                    <label for="driver">Your Driver</label>
+                </form>
+            </td>
+            <td>
+                <form action="url">
+                    <select name="drivers" id="driver" multiple>
+                        <option value="rb">Max</option>
+                        <option value="sf">Charles</option>
+                        <option value="ml">Lando</option>
+                        <option value="at">Zhou</option>
+                        <option value="wi">Albono</option>
+                        <option value="hm">Mike</option>
+                    </select><br>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="url">
+                    <label for="choice">How are you felling?</label>
+                </form>
+            </td>
+            <td>
+                <form action="url">
+                    Good<input type="radio" id="choice" name="feeling">
+                    Very good<input type="radio" id="choice" name="feeling">
+                    Bad<input type="radio" id="choice" name="feeling">
+                </form>
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                <form action="url">
+                    <label for="textarea">Write about your team</label>
+                </form>
+            </td>
+            <td>
+                <form action="url">
+                    <textarea id="textarea" placeholder="write here"></textarea>
+                </form>
+            </td>      
+    </table>
+    <div>
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+    </div>
+</body>
+</html>
